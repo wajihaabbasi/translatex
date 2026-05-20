@@ -14,6 +14,6 @@ if not GROQ_API_KEY:
 
 # Redirect standard traffic endpoints cleanly to Groq architecture
 client = AsyncOpenAI(
-    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+    base_url="https://generativelanguage.googleapis.com/v1beta/",
     api_key=GROQ_API_KEY #from .env file
 )
