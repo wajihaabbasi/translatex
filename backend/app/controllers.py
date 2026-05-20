@@ -37,7 +37,7 @@ async def execute_text_translation(payload: TranslationRequest) -> dict:
     """Executes the asynchronous connection to the Groq server and handles history logging."""
     try:
         response = await client.chat.completions.create(
-            model="llama-3.1-8b-instant",
+            model="gemini-1.5-flash",
             messages=[
                 {
                     "role": "system",
